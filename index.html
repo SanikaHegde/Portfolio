@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanika Hegde — CS Engineer & AI Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">Loading</span>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>SH<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#work" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-icon sun">☀️</span>
+      <span class="theme-icon moon">🌙</span>
+    </button>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#work" class="mobile-link">Projects</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-orb orb3"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> Open to Opportunities · CS Engineer
+      </div>
+      <h1 class="hero-name reveal">
+        <span class="name-line">Sanika</span>
+        <span class="name-line gradient-text">Hegde</span>
+      </h1>
+      <div class="hero-role reveal">
+        <span class="role-prefix">I build&nbsp;</span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc reveal">
+        Computer Science Engineer specializing in <strong>Artificial Intelligence</strong>, Machine Learning, Full-Stack Development, and UI Development. Experienced in building AI-powered healthcare solutions, scalable web applications, intuitive user interfaces, and large-scale content migration systems. Passionate about creating intelligent, user-centric, and impactful digital experiences. 🚀
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk →</a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://linkedin.com/in/sanika-h-r-a34029259/" target="_blank" class="social-link" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/SanikaHegde" target="_blank" class="social-link" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="mailto:sanisanika10@gmail.com" class="social-link" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="avatar-container reveal">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <div class="avatar-img">
+          <img src="sanika.png" alt="Sanika Hegde" />
+        </div>
+        <div class="avatar-badge">
+          <span>AI</span>
+        </div>
+      </div>
+      <div class="floating-cards">
+        <div class="float-card card-1">
+          <span class="card-icon">01</span>
+          <span class="card-label">AI & ML</span>
+        </div>
+        <div class="float-card card-2">
+          <span class="card-icon">02</span>
+          <span class="card-label">Python Dev</span>
+        </div>
+        <div class="float-card card-3">
+          <span class="card-icon">03</span>
+          <span class="card-label">Cloud Computing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE ─── -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Python</span><span class="marquee-dot">•</span>
+        <span>Machine Learning</span><span class="marquee-dot">•</span>
+        <span>TensorFlow</span><span class="marquee-dot">•</span>
+        <span>Deep Learning</span><span class="marquee-dot">•</span>
+        <span>Flask</span><span class="marquee-dot">•</span>
+        <span>MySQL</span><span class="marquee-dot">•</span>
+        <span>JavaScript</span><span class="marquee-dot">•</span>
+        <span>Cloud Computing</span><span class="marquee-dot">•</span>
+        <span>Full-Stack Dev</span><span class="marquee-dot">•</span>
+        <span>Data Analysis</span><span class="marquee-dot">•</span>
+        <span>Genetic Algorithms</span><span class="marquee-dot">•</span>
+        <span>Oracle Certified</span><span class="marquee-dot">•</span>
+        <span>Python</span><span class="marquee-dot">•</span>
+        <span>Machine Learning</span><span class="marquee-dot">•</span>
+        <span>TensorFlow</span><span class="marquee-dot">•</span>
+        <span>Deep Learning</span><span class="marquee-dot">•</span>
+        <span>Flask</span><span class="marquee-dot">•</span>
+        <span>MySQL</span><span class="marquee-dot">•</span>
+        <span>JavaScript</span><span class="marquee-dot">•</span>
+        <span>Cloud Computing</span><span class="marquee-dot">•</span>
+        <span>Full-Stack Dev</span><span class="marquee-dot">•</span>
+        <span>Data Analysis</span><span class="marquee-dot">•</span>
+        <span>Genetic Algorithms</span><span class="marquee-dot">•</span>
+        <span>Oracle Certified</span><span class="marquee-dot">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>01 — About</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <h2 class="section-title">Building with <span class="gradient-text">intelligence,</span><br/>driven by curiosity</h2>
+          <p class="about-text">
+            Hey! I'm a Computer Science Engineer graduated from Sahyadri College of Engineering and Management, with a strong passion for Artificial Intelligence, Cloud Computing, and Full-Stack Development.
+          </p>
+          <p class="about-text">
+            My journey is driven by curiosity, creativity, and a desire to solve meaningful problems. I enjoy developing intelligent systems, designing user-friendly applications, and exploring emerging technologies. Beyond coding, I value continuous learning, teamwork, and innovation.
+          </p>
+          <p class="about-text">
+            When I'm not coding, you'll find me reading, exploring photography, traveling, or listening to music.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num gradient-text">15+</span>
+              <span class="stat-label">GitHub Repos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num gradient-text">8+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" download>Download Resume ↓</a>
+        </div>
+        <div class="about-right reveal">
+          <div class="about-card-grid">
+            <div class="about-card">
+              <div class="about-card-icon">AI</div>
+              <h4>AI & Machine Learning</h4>
+              <p>Building intelligent systems using TensorFlow, deep learning and predictive modeling for real-world healthcare and optimization problems.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">FS</div>
+              <h4>Full-Stack Development</h4>
+              <p>Crafting end-to-end web applications from responsive frontends to Flask-powered backends and MySQL databases.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">CC</div>
+              <h4>Cloud Computing</h4>
+              <p>Exploring cloud fundamentals and modern infrastructure to build scalable, resilient applications.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">PS</div>
+              <h4>Problem Solver</h4>
+              <p>Using data-driven approaches and optimization techniques like genetic algorithms to tackle complex, real-world challenges.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal"><span>02 — Skills</span></div>
+      <h2 class="section-title reveal">Tools &amp; <span class="gradient-text">Technologies</span></h2>
+      <div class="skills-grid reveal">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">AI & Machine Learning</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Machine Learning</span>
+            <span class="skill-pill">Deep Learning</span>
+            <span class="skill-pill">Neural Networks</span>
+            <span class="skill-pill">TensorFlow</span>
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">CNN-LSTM Models</span>
+            <span class="skill-pill">Data Analysis</span>
+            <span class="skill-pill">Predictive Modeling</span>
+            <span class="skill-pill">Computer Vision</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Programming Languages</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">C</span>
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Full-Stack Development</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Express.js</span>
+            <span class="skill-pill">Flask</span>
+            <span class="skill-pill">Django</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">Authentication</span>
+            <span class="skill-pill">Responsive Design</span>
+            <span class="skill-pill">Frontend Development</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">UI Development</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Responsive Design</span>
+            <span class="skill-pill">User Interface Design</span>
+            <span class="skill-pill">UX Principles</span>
+            <span class="skill-pill">Figma</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Databases</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">Database Design</span>
+            <span class="skill-pill">Query Optimization</span>
+            <span class="skill-pill">Data Modeling</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Cloud & DevOps</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">AWS</span>
+            <span class="skill-pill">Microsoft Azure</span>
+            <span class="skill-pill">IBM Cloud</span>
+            <span class="skill-pill">Render Deployment</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">GitHub Actions</span>
+            <span class="skill-pill">Linux Administration</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Tools & Platforms</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Git & GitHub</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">Postman</span>
+            <span class="skill-pill">Jupyter Notebook</span>
+            <span class="skill-pill">Google Colab</span>
+            <span class="skill-pill">Unity</span>
+            <span class="skill-pill">JSON Processing</span>
+            <span class="skill-pill">API Integration</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Data Engineering & Migration</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Data Migration</span>
+            <span class="skill-pill">Content Migration</span>
+            <span class="skill-pill">CMS Integrations</span>
+            <span class="skill-pill">Data Transformation</span>
+            <span class="skill-pill">ETL Workflows</span>
+            <span class="skill-pill">JSON Handling</span>
+            <span class="skill-pill">Database Analysis</span>
+            <span class="skill-pill">Automation Scripts</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Soft Skills</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Problem Solving</span>
+            <span class="skill-pill">Analytical Thinking</span>
+            <span class="skill-pill">Leadership</span>
+            <span class="skill-pill">Team Collaboration</span>
+            <span class="skill-pill">Communication</span>
+            <span class="skill-pill">Event Management</span>
+            <span class="skill-pill">Creativity</span>
+            <span class="skill-pill">Continuous Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-bars reveal">
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span>Python & AI/ML</span><span>88%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span>Full-Stack Development</span><span>85%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span>Cloud & DevOps</span><span>80%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span>Database Design & SQL</span><span>85%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WORK ─── -->
+  <section class="work section" id="work">
+    <div class="container">
+      <div class="section-label reveal"><span>03 — Work</span></div>
+      <h2 class="section-title reveal">Selected <span class="gradient-text">Projects</span></h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal featured-project" data-index="1">
+          <div class="project-img" style="background-image: url('images/fursteps.jpg'); background-size: cover; background-position: center; background-color: #667eea;">
+            <div class="project-placeholder" style="display: none;">
+              <span class="project-emoji">01</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/SanikaHegde/Fursteps-pet-wellness-tracker.git" target="_blank" class="project-link-btn">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Full-Stack</span>
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag featured-tag">Featured</span>
+            </div>
+            <h3 class="project-title">FurSteps — Pet Wellness Tracking Management System</h3>
+            <p class="project-desc">Built a Flask-based pet wellness management system that helps pet owners track health records, schedule veterinary appointments, manage nutrition plans, and store emergency contacts. Implemented secure authentication and MySQL-based data management with a responsive user interface.</p>
+            <a href="https://github.com/SanikaHegde/Fursteps-pet-wellness-tracker.git" target="_blank" class="project-cta">View Project →</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-index="2">
+          <div class="project-img" style="background-image: url('images/copd.jpg'); background-size: cover; background-position: center; background-color: #f093fb;">
+            <div class="project-placeholder" style="display: none;">
+              <span class="project-emoji">02</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/SanikaHegde/COPD_STAGE_PREDICTION.git" target="_blank" class="project-link-btn">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Deep Learning</span>
+              <span class="project-tag">PyTorch & TensorFlow</span>
+              <span class="project-tag">Healthcare</span>
+            </div>
+            <h3 class="project-title">Multimodal Deep Learning for COPD Prediction</h3>
+            <p class="project-desc">Built a multimodal COPD diagnosis system using MLP and CNN-LSTM models to analyze spirometry data and respiratory audio signals. Achieved 98.19% accuracy and AUC of 0.99 for disease prediction and severity assessment. Deployed Flask-based system for real-time disease prediction and severity classification.</p>
+            <a href="https://github.com/SanikaHegde/COPD_STAGE_PREDICTION.git" target="_blank" class="project-cta">View Project →</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal" data-index="3">
+          <div class="project-img" style="background-image: url('images/timetable.jpg'); background-size: cover; background-position: center; background-color: #4facfe; position: relative;">
+            <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 45%; background: linear-gradient(135deg, #a8a8ff 0%, #7c6fff 100%); z-index: 0; opacity: 0.15;"></div>
+            <div class="project-placeholder" style="display: none;">
+              <span class="project-emoji">03</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/SanikaHegde/Automatic-Timetable-Scheduler-Using-Genetic-Algorithm.git" target="_blank" class="project-link-btn">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Genetic Algorithm</span>
+              <span class="project-tag">Optimization</span>
+              <span class="project-tag">Python</span>
+            </div>
+            <h3 class="project-title">Automatic Timetable Generation Using Genetic Algorithm</h3>
+            <p class="project-desc">Developed an automated timetable scheduling system using Genetic Algorithms to optimize faculty, classroom, and time-slot allocation while satisfying institutional constraints. Reduced scheduling conflicts and improved workload distribution through evolutionary optimization techniques, enabling efficient timetable generation.</p>
+            <a href="https://github.com/SanikaHegde/Automatic-Timetable-Scheduler-Using-Genetic-Algorithm.git" target="_blank" class="project-cta">View Project →</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal" data-index="4">
+          <div class="project-img" style="background-image: url('images/recipe.jpg'); background-size: cover; background-position: center; background-color: #43e97b;">
+            <div class="project-placeholder" style="display: none;">
+              <span class="project-emoji">04</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/SanikaHegde/Recipe-Sharing-Website.git" target="_blank" class="project-link-btn">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Frontend</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">LocalStorage</span>
+            </div>
+            <h3 class="project-title">Recipe Sharing Website</h3>
+            <p class="project-desc">Developed a responsive recipe sharing platform that allows users to browse, add, and delete recipes with ingredients, instructions, and images. Implemented client-side data persistence using LocalStorage and designed an intuitive, visually appealing user interface for seamless recipe management.</p>
+            <a href="https://github.com/SanikaHegde/Recipe-Sharing-Website.git" target="_blank" class="project-cta">View Project →</a>
+            <a href="https://sanikahegde.github.io/Recipe-Sharing-Website/" target="_blank" class="project-cta">Live Demo ↗</a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal" data-index="5">
+          <div class="project-img" style="background-image: url('images/qrcode.jpg'); background-size: cover; background-position: center; background-color: #fa709a;">
+            <div class="project-placeholder" style="display: none;">
+              <span class="project-emoji">05</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/SanikaHegde/QR-Code-Generator-Scanner.git" target="_blank" class="project-link-btn">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Frontend</span>
+              <span class="project-tag">QRCode.js</span>
+              <span class="project-tag">html5-qrcode</span>
+            </div>
+            <h3 class="project-title">QR Code Generator & Scanner</h3>
+            <p class="project-desc">Developed a web-based QR Code Generator and Scanner that enables users to generate QR codes from text or URLs and scan codes using a live camera or uploaded images. Integrated QRCode.js and html5-qrcode libraries to provide real-time QR generation and decoding through a responsive, user-friendly interface.</p>
+            <a href="https://github.com/SanikaHegde/QR-Code-Generator-Scanner.git" target="_blank" class="project-cta">View Project →</a>
+            <a href="https://sanikahegde.github.io/QR-Code-Generator-Scanner/" target="_blank" class="project-cta">Live Demo ↗</a>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal" data-index="6">
+          <div class="project-img" style="background-image: url('images/taskflow.jpg'); background-size: cover; background-position: center; background-color: #30cfd0;">
+            <div class="project-placeholder" style="display: none;">
+              <span class="project-emoji">06</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/SanikaHegde/Taskflow.git" target="_blank" class="project-link-btn">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Full-Stack</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <h3 class="project-title">TaskFlow – Smart Task Management Web Application</h3>
+            <p class="project-desc">Developed a full-stack task management application that enables users to create, track, prioritize, and manage tasks with due dates through an intuitive dashboard. Integrated PostgreSQL for persistent data storage and Chart.js for task analytics, with deployment on Render for seamless cloud accessibility.</p>
+            <a href="https://github.com/SanikaHegde/Taskflow.git" target="_blank" class="project-cta">View Project →</a>
+            <a href="https://taskflow-ns45.onrender.com" target="_blank" class="project-cta">Live Demo ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label reveal"><span>04 — Experience</span></div>
+      <h2 class="section-title reveal">Professional <span class="gradient-text">Experience</span></h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineer</h3>
+                <span class="timeline-company">Quintype Technologies · Onsite</span>
+              </div>
+              <span class="timeline-date">May 2026 — Present</span>
+            </div>
+            <p class="timeline-desc">Develop and maintain content migration solutions using Quintype Migrator, enabling seamless transfer of structured content from external CMS platforms into the Quintype ecosystem. Design, validate, and optimize migration workflows by transforming, mapping, and cleaning large-scale content datasets while collaborating with cross-functional teams to improve platform functionality and user experience.</p>
+            <div class="timeline-tags">
+              <span>Quintype Migrator</span><span>Content Migration</span><span>CMS</span><span>Data Transformation</span><span>Cross-Functional Collaboration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Migration Engineer Intern</h3>
+                <span class="timeline-company">Quintype Technologies · Onsite</span>
+              </div>
+              <span class="timeline-date">Jan 2026 — May 2026</span>
+            </div>
+            <p class="timeline-desc">Performed CMS data migration using Quintype Migrator by transforming and importing structured content from external systems into the platform, ensuring seamless data transfer. Validated, cleaned, and mapped data to intermediate formats while contributing to frontend and product design, enhancing content presentation and overall user experience.</p>
+            <div class="timeline-tags">
+              <span>CMS Migration</span><span>Data Validation</span><span>Data Mapping</span><span>Frontend Collaboration</span><span>UX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Junior Software Developer (Entry Level)</h3>
+                <span class="timeline-company">Edutainer · Remote</span>
+              </div>
+              <span class="timeline-date">Feb 2026 — May 2026</span>
+            </div>
+            <p class="timeline-desc">Developed responsive web applications using React, HTML, CSS, and JavaScript, enhancing user experience and application usability. Implemented backend functionality, RESTful APIs, and database integrations to support efficient data processing and application performance.</p>
+            <div class="timeline-tags">
+              <span>React</span><span>JavaScript</span><span>REST APIs</span><span>Database Integration</span><span>Responsive UI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS & HIGHLIGHTS ─── -->
+  <section class="testimonials section" id="certifications">
+    <div class="container">
+      <div class="section-label reveal"><span>05 — Certifications</span></div>
+      <h2 class="section-title reveal"><span class="gradient-text">Certifications</span></h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">01</div>
+          <p class="testimonial-text">Acquired foundational knowledge of cloud architecture, virtualization, cloud service models (IaaS, PaaS, SaaS), deployment models, scalability, automation, and cost optimization concepts.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #0ea5e9, #2563eb);">IB</div>
+            <div>
+              <strong>Cloud Computing Fundamentals Certification</strong>
+              <span>IBM SkillsBuild · Aug 2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">02</div>
+          <p class="testimonial-text">Completed training in Python programming, data structures, functions, algorithms, and problem-solving, with hands-on experience developing Python-based applications and scripts.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #8b5cf6, #6366f1);">IN</div>
+            <div>
+              <strong>TechA Python Developer Certification</strong>
+              <span>Infosys Springboard · Sep 2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">03</div>
+          <p class="testimonial-text">Developed responsive web applications using React, HTML, CSS, and JavaScript, enhancing user experience and application usability. Implemented backend functionality, RESTful APIs, and database integrations to support efficient data processing and application performance.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #f97316, #fb923c);">JS</div>
+            <div>
+              <strong>Junior Software Developer (Entry Level)</strong>
+              <span>Edutainer · May 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interests -->
+      <div class="interests-wrap reveal">
+        <h3 class="interests-title">Core Interests</h3>
+        <div class="interests-grid">
+          <div class="interest-item"><span>AI &amp; Machine Learning</span></div>
+          <div class="interest-item"><span>Cloud Computing</span></div>
+          <div class="interest-item"><span>Full-Stack Development</span></div>
+          <div class="interest-item"><span>Software Engineering</span></div>
+          <div class="interest-item"><span>Data Engineering</span></div>
+        </div>
+        <h3 class="interests-title" style="margin-top: 1.25rem;">Beyond Tech</h3>
+        <div class="interests-grid">
+          <div class="interest-item"><span>📚 Reading</span></div>
+          <div class="interest-item"><span>📸 Photography</span></div>
+          <div class="interest-item"><span>✈️ Traveling</span></div>
+          <div class="interest-item"><span>🎵 Music</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal"><span>06 — Contact</span></div>
+      <div class="contact-inner">
+        <div class="contact-left reveal">
+          <h2 class="section-title">Let's build something <span class="gradient-text">impactful</span> together</h2>
+          <p class="contact-desc">I'm actively open to full-time software engineering opportunities and impactful AI/ML or full-stack projects. Whether you have a role, a collaboration, or just want to connect — my inbox is always open.</p>
+          <div class="contact-info">
+            <a href="mailto:sanisanika10@gmail.com" class="contact-detail">
+              <span class="contact-icon">✉️</span>
+              sanisanika10@gmail.com
+            </a>
+          </div>
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/sanika-h-r-a34029259/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+            <a href="https://github.com/SanikaHegde" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-input" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Project Type</label>
+              <select class="form-input form-select">
+                <option value="">Select a topic</option>
+                <option>Internship / Job Opportunity</option>
+                <option>AI / ML Collaboration</option>
+                <option>Full-Stack Development</option>
+                <option>Open Source Contribution</option>
+                <option>Just Want to Connect</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-input form-textarea" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>SH<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">Designed &amp; Built by Sanika Hegde • 2026</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
