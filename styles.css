@@ -603,6 +603,11 @@ body:hover .cursor-outline { opacity: 0.5; }
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
+.about-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 .stat-item { text-align: center; }
 .stat-num {
   display: block;
