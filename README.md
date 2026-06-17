@@ -113,7 +113,7 @@ CGPA: 9.09
 
 📧 Email: sanisanika10@gmail.com
 
-🔗 LinkedIn: [https://linkedin.com/in/your-profile](https://www.linkedin.com/in/sanika-hegde-a34029259/)
+🔗 LinkedIn: [https://linkedin.com/in/SanikaHegde](https://www.linkedin.com/in/sanika-hegde-a34029259/)
 
 💻 GitHub: https://github.com/SanikaHegde
 
