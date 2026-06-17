@@ -97,7 +97,7 @@ A database-driven application for tracking:
 ### Sahyadri College of Engineering and Management
 Bachelor of Engineering (Computer Science & Engineering)
 
-CGPA: 9.0
+CGPA: 9.09
 
 ---
 
@@ -111,9 +111,9 @@ CGPA: 9.0
 
 ## 📬 Contact
 
-📧 Email: your-email@example.com
+📧 Email: sanisanika10@gmail.com
 
-🔗 LinkedIn: https://linkedin.com/in/your-profile
+🔗 LinkedIn: [https://linkedin.com/in/your-profile](https://www.linkedin.com/in/sanika-hegde-a34029259/)
 
 💻 GitHub: https://github.com/SanikaHegde
 
@@ -127,6 +127,3 @@ If you like this portfolio, consider giving the repository a star ⭐.
 
 ---
 
-## 📄 License
-
-This project is open-source and available under the MIT License.
